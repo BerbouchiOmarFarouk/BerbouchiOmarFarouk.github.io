@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Developer Portfolio</title>
-    <meta name="description" content="Professional portfolio showcasing my skills in Python, Java, Dart/Flutter, Kotlin, and more">
+    <title>Portfolio | Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* CSS Variables for Zima Blue Theme */
@@ -34,7 +33,6 @@
             background-color: var(--zima-dark);
             color: var(--text-light);
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
         .container {
@@ -103,12 +101,11 @@
 
         /* Header & Navigation */
         header {
-            background-color: rgba(26, 58, 95, 0.95);
+            background-color: var(--zima-medium);
             position: fixed;
             width: 100%;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
         }
 
         nav {
@@ -143,22 +140,6 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--zima-highlight);
-            transition: width 0.3s;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
         }
 
         .nav-links a:hover {
@@ -452,7 +433,6 @@
                 text-align: center;
                 transition: 0.3s;
                 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-                padding: 20px 0;
             }
             
             .nav-links.active {
@@ -470,11 +450,6 @@
             h2 {
                 font-size: 2rem;
             }
-            
-            .hero-btns {
-                flex-direction: column;
-                align-items: flex-start;
-            }
         }
     </style>
 </head>
@@ -483,7 +458,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">Your<span>Name</span></a>
+                <a href="#" class="logo">Portfo<span>lio</span></a>
                 <div class="menu-toggle" id="menuToggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -502,8 +477,8 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Hello, I'm <span style="color: var(--zima-highlight)">Your Name</span></h1>
-                <p>I'm a passionate developer specializing in Python, Java, Dart/Flutter, and Kotlin. I create innovative applications and solutions that solve real-world problems.</p>
+                <h1>Hello, I'm a <span style="color: var(--zima-highlight)">Developer</span></h1>
+                <p>I create innovative applications and solutions using modern technologies. Passionate about clean code and user experience.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -518,8 +493,8 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a dedicated software developer with a passion for creating efficient, user-friendly applications. My journey in software development began several years ago, and I've been constantly learning and adapting to new technologies ever since.</p>
-                    <p>I specialize in mobile application development, backend systems, and innovative solutions that bridge the gap between complex technology and intuitive user experiences. My approach combines technical expertise with a focus on clean, maintainable code.</p>
+                    <p>I'm a passionate developer with expertise in multiple programming languages and frameworks. My journey in software development began several years ago, and I've been constantly learning and adapting to new technologies ever since.</p>
+                    <p>I specialize in creating mobile applications, backend systems, and innovative solutions that solve real-world problems. My approach combines technical expertise with a focus on user experience and clean, maintainable code.</p>
                     <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and staying updated with the latest trends in the tech industry.</p>
                     <a href="#" class="btn" style="margin-top: 20px;">Download CV</a>
                 </div>
@@ -541,32 +516,32 @@
                 <div class="skill-card">
                     <i class="fab fa-python"></i>
                     <h3>Python</h3>
-                    <p>Extensive experience in Python development, including multi-agent systems, data analysis, and backend development with frameworks like Django and Flask.</p>
+                    <p>Extensive experience in Python development, including multi-agent systems, data analysis, and backend development.</p>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-java"></i>
                     <h3>Java</h3>
-                    <p>Proficient in Java application development, with projects including educational tools for graph theory and enterprise-level applications.</p>
+                    <p>Proficient in Java application development, with projects including educational tools for graph theory.</p>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-android"></i>
                     <h3>Kotlin/Jetpack</h3>
-                    <p>Skilled in Android development using Kotlin and Jetpack Compose for modern, responsive mobile applications with clean architecture patterns.</p>
+                    <p>Skilled in Android development using Kotlin and Jetpack Compose for modern, responsive mobile applications.</p>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-flutter"></i>
                     <h3>Dart/Flutter</h3>
-                    <p>Experienced in cross-platform mobile development using Flutter and Dart for iOS and Android applications with beautiful, native-like UIs.</p>
+                    <p>Experienced in cross-platform mobile development using Flutter and Dart for iOS and Android.</p>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-git-alt"></i>
                     <h3>Git</h3>
-                    <p>Proficient in version control using Git for collaborative development, code reviews, and project management workflows.</p>
+                    <p>Proficient in version control using Git for collaborative development and project management.</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-database"></i>
                     <h3>Supabase</h3>
-                    <p>Experience with Supabase for backend development, authentication, real-time databases, and serverless functions.</p>
+                    <p>Experience with Supabase for backend development, authentication, and real-time databases.</p>
                 </div>
             </div>
         </div>
@@ -583,12 +558,11 @@
                     </div>
                     <div class="project-content">
                         <h3>Graph Theory Teaching App</h3>
-                        <p>An educational Java application designed to teach graph theory concepts through interactive visualizations and exercises. Features include graph creation, algorithm visualization, and step-by-step tutorials.</p>
+                        <p>An educational Java application designed to teach graph theory concepts through interactive visualizations and exercises.</p>
                         <div class="project-tags">
                             <span class="project-tag">Java</span>
                             <span class="project-tag">Swing</span>
                             <span class="project-tag">Graph Theory</span>
-                            <span class="project-tag">Educational</span>
                         </div>
                         <a href="#" class="btn">View Details</a>
                     </div>
@@ -599,12 +573,11 @@
                     </div>
                     <div class="project-content">
                         <h3>Comuniq Mobile App</h3>
-                        <p>A communication-focused mobile application built with Kotlin and Jetpack Compose, designed to streamline community interactions with features like group chats, event planning, and resource sharing.</p>
+                        <p>A communication-focused mobile application built with Kotlin and Jetpack Compose, designed to streamline community interactions.</p>
                         <div class="project-tags">
                             <span class="project-tag">Kotlin</span>
                             <span class="project-tag">Jetpack</span>
                             <span class="project-tag">Android</span>
-                            <span class="project-tag">Firebase</span>
                         </div>
                         <a href="#" class="btn">View Details</a>
                     </div>
@@ -615,12 +588,11 @@
                     </div>
                     <div class="project-content">
                         <h3>Hometown Food Delivery</h3>
-                        <p>A Flutter-based food delivery application connecting local restaurants with customers in their community. Features include real-time order tracking, payment integration, and restaurant management dashboard.</p>
+                        <p>A Flutter-based food delivery application connecting local restaurants with customers in their community.</p>
                         <div class="project-tags">
                             <span class="project-tag">Flutter</span>
                             <span class="project-tag">Dart</span>
                             <span class="project-tag">Mobile</span>
-                            <span class="project-tag">Supabase</span>
                         </div>
                         <a href="#" class="btn">View Details</a>
                     </div>
@@ -631,12 +603,11 @@
                     </div>
                     <div class="project-content">
                         <h3>LLM-Based Multi-Agent System</h3>
-                        <p>A Python-based multi-agent system utilizing local LLM for developing applications from conceptual ideas. The system coordinates specialized AI agents to plan, design, and implement software solutions.</p>
+                        <p>A Python-based multi-agent system utilizing local LLM for developing applications from conceptual ideas.</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">LLM</span>
                             <span class="project-tag">AI</span>
-                            <span class="project-tag">Multi-Agent</span>
                         </div>
                         <a href="#" class="btn">View Details</a>
                     </div>
@@ -672,31 +643,24 @@
                             <p>+1 234 567 8900</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <div>
-                            <h3>Website</h3>
-                            <p>yourusername.github.io</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form>
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
                         </div>
                         <div class="form-group">
                             <label for="email">Your Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                            <input type="text" id="subject" class="form-control" placeholder="Enter subject">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                            <textarea id="message" class="form-control" placeholder="Enter your message"></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
@@ -714,7 +678,7 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <p class="copyright">&copy; 2023 Your Name. All rights reserved.</p>
+            <p class="copyright">&copy; 2023 Portfolio. All rights reserved.</p>
         </div>
     </footer>
 
@@ -747,23 +711,6 @@
                     });
                 }
             });
-        });
-
-        // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-
-        // Header background on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.backgroundColor = 'rgba(11, 26, 48, 0.95)';
-            } else {
-                header.style.backgroundColor = 'rgba(26, 58, 95, 0.95)';
-            }
         });
     </script>
 </body>
